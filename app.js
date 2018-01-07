@@ -6,7 +6,7 @@ const app = express();
 //작은 따옴표 사이에 본인이 받으신 token을 paste합니다.
 //나중에 보안을 위해서 따로 setting을 하는 방법을 알려드리겠습니다.
 //이 토큰이 포함된 파일을 절대 업로드하거나 github에 적용시키지 마세요.
-var PAGE_ACCESS_TOKEN = 'http://egloos.zum.com/mcchae/v/11263580';
+var PAGE_ACCESS_TOKEN = 'EAACfN6xSVIMBAIbcPNoIlShHxfX6sVZBmHKoxzfNTEIluZAjUuf35lRQEKGLQlURr24vH7776SGNhFvXZACq5rNfB9kZC4aTFRii16q43UHNL98TM4VpqhZCClfPnISZCPZAU4wljEqvLMdwAQ0pMX5f0dMX1OrKji1NNrmwipwwhU0hSZBD6Kjs';
 app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
