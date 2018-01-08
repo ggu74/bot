@@ -49,8 +49,11 @@ app.post("/webhook", function(req, res) {
 function receivedMessage(event) {
     var senderId = event.sender.id;
     var content = event.message.text;
-    var echo_message = "ECHO : " + content;
-    sendTextMessage(senderId, echo_message);
+    if (content == "안녕") {
+        sendTextMessage(senderId, "좆까");
+    }
+    //var echo_message = "ECHO : " + content;
+    //sendTextMessage(senderId, echo_message);
 }
 function receivedPostback(event) {
     console.log("RECEIVED POSTBACK IT WORKS");
@@ -80,3 +83,4 @@ function sendTextMessage(recipientId, message) {
 app.listen(app.get('port'), function() {
     console.log('running on port', app.get('port'));
 })
+
